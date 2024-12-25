@@ -25,18 +25,18 @@ export default function Project() {
           résolution de défis numériques.
         </p>
       </div>
-      <ul className="grid xl:grid-cols-3 z-10 md:grid-cols-2 px-10 max-w-[1500px] mx-auto max-md:overflow-y-scroll max-md:h-screen items-center justify-center w-full gap-20">
+      <ul className="grid xl:grid-cols-3  z-10 md:grid-cols-2 px-10 max-w-[1500px] mx-auto max-md:overflow-y-scroll max-md:h-screen items-center justify-center w-full gap-24 ">
         {projectsData.map((project, idx) => {
           return (
-            <li key={`project numéro ${idx}`}>
+            <li className="" key={`project numéro ${idx}`}>
               <PinContainer title={project.title} href={project.link}>
-                <div className="flex basis-full flex-col gap-4  p-4 tracking-tight  text-slate-100/50 sm:basis-1/2 w-[20rem] h-[25rem] ">
-                  <div className="w-full rounded-lg">
+                <div className="flex basis-full flex-col gap-4   p-4 tracking-tight  text-slate-100/50 sm:basis-1/2 w-[20rem] h-[22.5rem] ">
+                  <div className="w-full rounded-lg relative">
                     <Image
                       src={project.img}
                       width={200}
                       height={200}
-                      className="w-full h-full rounded-lg object-contain"
+                      className="w-full h-full rounded-lg object-contain "
                       alt={`image de  ${project.title}`}
                     />
                   </div>
@@ -51,7 +51,10 @@ export default function Project() {
                   <div className="flex justify-between items-center w-full">
                     <ul className="flex gap-2">
                       {project.languages.map((language, idx) => (
-                        <li className="" key={`language numéro ${idx}`}>
+                        <li
+                          className="text-purple-300"
+                          key={`language numéro ${idx}`}
+                        >
                           {language}
                         </li>
                       ))}

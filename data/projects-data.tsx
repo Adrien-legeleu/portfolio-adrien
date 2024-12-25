@@ -42,20 +42,6 @@ export const projectsData = [
       "Application de restaurant permettant de parcourir le menu et de passer des commandes en ligne.",
   },
   {
-    img: project3,
-    title: "Lurex",
-    link: "https://lurex.netlify.app/",
-    languages: [
-      <IconBrandReact />,
-      <IconBrandTailwind />,
-      <IconBrandJavascript />,
-    ],
-    video: "/video/video-lurex.mp4",
-    color: "#1A1A1A",
-    description:
-      "Site web de présentation pour une entreprise de textile avec une interface moderne.",
-  },
-  {
     img: project4,
     title: "Or Lumière",
     link: "https://orlumiere.netlify.app/",
@@ -74,7 +60,7 @@ export const projectsData = [
     title: "Sturmayr",
     link: "https://sturmayr.netlify.app/",
     languages: [
-      <IconBrandReact />,
+      <IconBrandNextjs />,
       <IconBrandTailwind />,
       <IconBrandJavascript />,
     ],
@@ -88,7 +74,7 @@ export const projectsData = [
     title: "Sushi Food",
     link: "https://sushifood.netlify.app/",
     languages: [
-      <IconBrandReact />,
+      <IconBrandNextjs />,
       <IconBrandTailwind />,
       <IconBrandJavascript />,
     ],
@@ -96,6 +82,20 @@ export const projectsData = [
     color: "#2A2A2A",
     description:
       "Application de commande de sushi en ligne avec un menu interactif et des options de personnalisation.",
+  },
+  {
+    img: project3,
+    title: "Lurex",
+    link: "https://lurex.netlify.app/",
+    languages: [
+      <IconBrandReact />,
+      <IconBrandTailwind />,
+      <IconBrandJavascript />,
+    ],
+    video: "/video/video-lurex.mp4",
+    color: "#1A1A1A",
+    description:
+      "Site web de présentation pour une entreprise de textile avec une interface moderne.",
   },
   {
     img: project7,
@@ -116,7 +116,7 @@ export const projectsData = [
     title: "Lucas Portfolio",
     link: "https://lucassportfolio.netlify.app/",
     languages: [
-      <IconBrandReact />,
+      <IconBrandNextjs />,
       <IconBrandTailwind />,
       <IconBrandJavascript />,
     ],
