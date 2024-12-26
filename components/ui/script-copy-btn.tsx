@@ -63,7 +63,7 @@ export default function ScriptCopyBtn({
     <div
       className={cn(
         "mx-auto flex max-w-md items-center justify-center",
-        className,
+        className
       )}
     >
       <div className="w-full space-y-2">
@@ -106,7 +106,7 @@ export default function ScriptCopyBtn({
             </div>
           )}
         </div>
-        <div className="relative flex items-center">
+        <div className="relative flex items-center text-sm">
           <div className="min-w-[300px] grow font-mono">
             {highlightedCode ? (
               <div
@@ -116,7 +116,7 @@ export default function ScriptCopyBtn({
                 dangerouslySetInnerHTML={{ __html: highlightedCode }}
               />
             ) : (
-              <pre className="rounded-md border border-border bg-white p-2 px-4 font-mono dark:bg-black">
+              <pre className="rounded-md  border border-border bg-white p-2 px-4 font-mono dark:bg-black">
                 {command}
               </pre>
             )}
@@ -130,12 +130,12 @@ export default function ScriptCopyBtn({
           >
             <span className="sr-only">{copied ? "Copied" : "Copy"}</span>
             <Copy
-              className={`h-4 w-4 transition-all duration-300 ${
+              className={`h-3 w-3 transition-all duration-300 ${
                 copied ? "scale-0" : "scale-100"
               }`}
             />
             <Check
-              className={`absolute inset-0 m-auto h-4 w-4 transition-all duration-300 ${
+              className={`absolute inset-0 m-auto h-3 w-3 transition-all duration-300 ${
                 copied ? "scale-100" : "scale-0"
               }`}
             />
