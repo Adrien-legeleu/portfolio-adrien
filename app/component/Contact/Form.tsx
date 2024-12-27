@@ -13,7 +13,7 @@ export function FormContact() {
     console.log("Form submitted");
   };
   return (
-    <div className=" w-full mx-auto rounded-none md:rounded-2xl border p-4 md:p-8 shadow-input bg-black">
+    <div className=" w-full mx-auto rounded-none md:rounded-3xl border p-4 md:p-8 shadow-input bg-black">
       <h2 className="font-bold text-xl text-neutral-200">Contactez-nous</h2>
       <p className=" text-sm max-w-sm mt-2 text-neutral-300">
         Login to aceternity if you can because we don&apos;t have a login flow
