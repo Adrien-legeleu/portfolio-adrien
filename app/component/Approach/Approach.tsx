@@ -4,7 +4,7 @@ import { FlipCard } from "../../../components/ui/flip-card";
 
 const Approach = () => {
   return (
-    <div className="py-20">
+    <div className="py-20" id="approach">
       <h2 className="sm:text-4xl text-2xl px-4 font-bold space-y-1 max-w-xl mx-auto text-indigo-purple dark:text-indigo-light text-center">
         <span className="bg-[#3F2A78] dark:bg-[#A0AEC0] dark:text-black p-3 sm:text-4xl text-xl inline-block rounded-lg rotate-3 text-neutral-50">
           Mon Approche

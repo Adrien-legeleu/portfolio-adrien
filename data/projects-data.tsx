@@ -26,10 +26,10 @@ export const projectsData = [
       <IconBrandTailwind />,
       <IconBrandTypescript />,
     ],
-    video: "/video/video-bank.mp4", // Vérifie que ce chemin est correct dans ton dossier public
+    video: "/video/video-bank.mp4",
     color: "#090C18",
     description:
-      "Application bancaire avec une interface utilisateur interactive et des fonctionnalités de gestion financière.",
+      "Une application bancaire moderne avec une interface fluide pour gérer vos finances au quotidien.",
   },
   {
     img: project2,
@@ -39,7 +39,7 @@ export const projectsData = [
     video: "/video/video-restaurant.mp4",
     color: "#21201E",
     description:
-      "Application de restaurant permettant de parcourir le menu et de passer des commandes en ligne.",
+      "Site élégant pour un restaurant, avec un menu interactif et la possibilité de réserver facilement en ligne.",
   },
   {
     img: project4,
@@ -50,10 +50,10 @@ export const projectsData = [
       <IconBrandTailwind />,
       <IconBrandTypescript />,
     ],
-    video: "video/video-orlumiere.mp4",
+    video: "/video/video-orlumiere.mp4",
     color: "#FFFFFF",
     description:
-      "Site web de présentation pour une entreprise spécialisée dans l'éclairage, mettant en valeur leurs services et réalisations.",
+      "Vitrine numérique d'une marque de bijoux, mettant en avant des créations élégantes et intemporelles.",
   },
   {
     img: project5,
@@ -67,7 +67,7 @@ export const projectsData = [
     video: "/video/video-sturmayr.mp4",
     color: "#1C1C1C",
     description:
-      "Site web pour une entreprise de construction avec des projets et des services détaillés.",
+      "Un site moderne et épuré pour un salon de coiffure, avec une présentation des services et une galerie des styles réalisés.",
   },
   {
     img: project6,
@@ -81,7 +81,7 @@ export const projectsData = [
     video: "/video/video-sushi.mp4",
     color: "#2A2A2A",
     description:
-      "Application de commande de sushi en ligne avec un menu interactif et des options de personnalisation.",
+      "Un site pratique et interactif pour commander des sushis, avec un menu clair et des options personnalisées.",
   },
   {
     img: project3,
@@ -95,7 +95,7 @@ export const projectsData = [
     video: "/video/video-lurex.mp4",
     color: "#1A1A1A",
     description:
-      "Site web de présentation pour une entreprise de textile avec une interface moderne.",
+      "Site web élégant pour une entreprise de location de voitures de luxe, alliant style et fonctionnalité.",
   },
   {
     img: project7,
@@ -109,7 +109,7 @@ export const projectsData = [
     video: "/video/video-villa.mp4",
     color: "#333333",
     description:
-      "Site web pour une villa de location avec des informations sur les chambres, les services et les réservations.",
+      "Un site immersif pour une villa de location, avec des photos captivantes et des informations détaillées sur les services.",
   },
   {
     img: project8,
@@ -123,6 +123,6 @@ export const projectsData = [
     video: "/video/video-portfolio.mp4",
     color: "#444444",
     description:
-      "Portfolio personnel pour un développeur web avec des projets, des compétences et des informations de contact.",
+      "Un portfolio simple et moderne pour un développeur web, mettant en avant ses compétences et ses projets.",
   },
 ];

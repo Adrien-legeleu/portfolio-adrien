@@ -5,8 +5,8 @@ import ImgProfil from "@/public/images/about (1).jpg";
 
 export default function Header() {
   return (
-    <div className="fixed z-50 top-5 left-1/2 -translate-x-1/2 w-1/2 bg-neutral-800 rounded-2xl border border-neutral-700/50 flex justify-between items-center px-5 py-2">
-      <h2 className="text-xl flex gap-3 items-center justify-center">
+    <div className="fixed z-50 top-5 left-1/2  -translate-x-1/2 w-[55%] gap-10 bg-neutral-800 rounded-3xl border border-neutral-700/50 flex justify-between items-center px-5 py-2">
+      <h2 className="text-xl  flex gap-3 items-center justify-center">
         {" "}
         <div className="w-full relative flex items-center justify-center">
           <Image
@@ -14,7 +14,7 @@ export default function Header() {
             width={100}
             height={100}
             alt="profil développeur adrien legeleux "
-            className="rounded-full w-10 h-10 object-cover "
+            className="rounded-full w-20 h-8 object-cover "
           />
         </div>
         Adrien.
@@ -26,22 +26,22 @@ export default function Header() {
 
 export const projects = [
   {
-    title: "Mesprojets",
-    link: "https://stripe.com",
-  },
-  {
     title: "A propos",
 
-    link: "https://netflix.com",
+    link: "#about",
   },
   {
-    title: "technologies",
-
-    link: "https://google.com",
+    title: "Mes projects",
+    link: "#projects",
   },
   {
-    title: "Réalisations",
+    title: "Mon approche",
 
-    link: "https://meta.com",
+    link: "#approach",
+  },
+  {
+    title: "Contactez-moi",
+
+    link: "#contact",
   },
 ];

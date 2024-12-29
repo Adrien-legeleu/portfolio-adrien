@@ -17,19 +17,23 @@ export const HoverEffect = ({
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div className={cn("flex items-center ", className)}>
+    <div className={cn("flex items-center w-full justify-between ", className)}>
       {items.map((item, idx) => (
         <Link
           href={item?.link}
           key={item?.link}
-          className="relative group  block  h-full w-full"
+          className={`relative group  block  h-full ${
+            item.title === "Contactez-moi"
+              ? "bg-red-600 rounded-3xl font-semibold"
+              : ""
+          }`}
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-neutral-700/30 block  rounded-2xl"
+                className="absolute inset-0 h-full  bg-neutral-700/30 block  rounded-3xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -62,7 +66,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-2xl  p-4 overflow-hidden  relative z-20",
+        "rounded-3xl  p-4 overflow-hidden  relative z-20",
         className
       )}
     >
@@ -82,7 +86,7 @@ export const CardTitle = ({
   return (
     <h4
       className={cn(
-        "text-sm tracking-wide text-neutral-300 hover:text-neutral-50 transition-colors ",
+        "text-sm tracking-wide text-center text-neutral-300 hover:text-neutral-50 transition-colors ",
         className
       )}
     >

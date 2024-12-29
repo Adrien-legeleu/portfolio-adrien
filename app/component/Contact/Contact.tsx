@@ -26,7 +26,7 @@ const Contact = () => {
     },
   };
   return (
-    <div className="my-20 grid grid-cols-2 gap-20 px-5">
+    <div className="my-20 grid grid-cols-2 gap-20 px-5" id="contact">
       <FormContact />
       <div className="space-y-10">
         <motion.div

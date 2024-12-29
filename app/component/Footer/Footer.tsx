@@ -1,4 +1,8 @@
-import { IconSend } from "@tabler/icons-react";
+import {
+  IconBrandGithub,
+  IconBrandLinkedin,
+  IconSend,
+} from "@tabler/icons-react";
 
 const Footer = () => {
   return (
@@ -20,8 +24,17 @@ const Footer = () => {
       <div className="flex justify-between mt-20 w-full px-10">
         <span className="text-sm">Copyright ©2025 Adrien Legeleux</span>
         <ul className="flex gap-4">
-          <li>github</li>
-          <li>linkedin</li>
+          <li className="hover:scale-110 transform transition-all duration-300 cursor-pointer">
+            <a href="https://github.com/Adrien-legeleu">
+              <IconBrandGithub stroke={2} />
+            </a>
+          </li>
+          <li className="hover:scale-110 transform transition-all duration-300 cursor-pointer">
+            <a href="https://www.linkedin.com/in/adrien-legeleux/">
+              {" "}
+              <IconBrandLinkedin stroke={2} />
+            </a>
+          </li>
         </ul>
       </div>
     </div>

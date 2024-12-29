@@ -13,42 +13,42 @@ export default function Project() {
       <div className="absolute pointer-events-none -z-0 inset-0 flex items-center justify-center [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)]" />
       <div className="flex flex-col gap-8 items-center justify-center w-full pb-10">
         <h2 className="sm:text-4xl text-2xl px-4 font-bold space-y-1 text-indigo-purple dark:text-indigo-light text-center">
-          <span className="inline-block ">Découvrez nos</span>
+          <span className="inline-block">Nos</span>
           <span className="bg-[#3F2A78] dark:bg-[#A0AEC0] dark:text-black p-3 sm:text-4xl text-xl inline-block rounded-lg rotate-3 text-neutral-50">
-            Projets réalisés
+            Projets
           </span>
         </h2>
-        <p className="text-center text-lg px-8 max-w-4xl  leading-relaxed text-neutral-400">
-          Parcourez une sélection de projets innovants et créatifs réalisés dans
-          divers domaines du développement web. Chaque projet représente une
-          expérience unique en matière de technologie, d&lsquo;innovation, et de
-          résolution de défis numériques.
+        <p className="text-center text-lg px-8 max-w-4xl leading-relaxed text-neutral-400">
+          Découvrez une sélection de projets que j’ai réalisés avec passion.
+          Chacun de ces sites reflète mon engagement à créer des expériences web
+          modernes, créatives et fonctionnelles. J’aime explorer des idées
+          uniques et les transformer en designs interactifs qui captivent.
         </p>
       </div>
-      <ul className="grid xl:grid-cols-3  z-10 md:grid-cols-2 px-10 max-w-[1500px] mx-auto max-md:overflow-y-scroll max-md:h-screen items-center justify-center w-full gap-24 ">
+      <ul className="grid xl:grid-cols-3 z-10 md:grid-cols-2 px-10 max-w-[1500px] mx-auto max-md:overflow-y-scroll max-md:h-screen items-center justify-center w-full gap-24">
         {projectsData.map((project, idx) => {
           return (
             <li className="" key={`project numéro ${idx}`}>
               <PinContainer title={project.title} href={project.link}>
-                <div className="flex basis-full flex-col gap-4   p-4 tracking-tight  text-slate-100/50 sm:basis-1/2 w-[20rem] h-[22.5rem] ">
+                <div className="flex basis-full justify-start flex-col gap-4 p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[23rem]">
                   <div className="w-full rounded-lg relative">
                     <Image
                       src={project.img}
                       width={200}
                       height={200}
-                      className="w-full h-full rounded-lg object-contain "
-                      alt={`image de  ${project.title}`}
+                      className="w-full h-full rounded-lg object-contain"
+                      alt={`image de ${project.title}`}
                     />
                   </div>
-                  <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
+                  <h3 className="max-w-xs !pb-2 !m-0 font-bold text-base text-slate-100">
                     {project.title}
                   </h3>
                   <div className="text-base !m-0 !p-0 font-normal">
-                    <span className="text-slate-400 text-xs ">
+                    <span className="text-slate-400 text-xs">
                       {project.description}
                     </span>
                   </div>
-                  <div className="flex justify-between items-center w-full">
+                  <div className="flex justify-between items-center w-full absolute bottom-0">
                     <ul className="flex gap-2">
                       {project.languages.map((language, idx) => (
                         <li
@@ -59,7 +59,7 @@ export default function Project() {
                         </li>
                       ))}
                     </ul>
-                    <Button>Visiter le site</Button>
+                    <Button>Voir le site</Button>
                   </div>
                 </div>
               </PinContainer>

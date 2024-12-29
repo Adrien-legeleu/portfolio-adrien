@@ -6,7 +6,7 @@ import Project from "./component/Project/Project";
 
 export default function Home() {
   return (
-    <div className="px-20">
+    <div className="px-20 overflow-x-hidden">
       <Landing />
       <About />
       <Project />
