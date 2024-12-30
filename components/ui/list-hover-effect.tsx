@@ -66,7 +66,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-3xl  p-4 overflow-hidden  relative z-20",
+        "rounded-3xl  lg:p-4 p-3 overflow-hidden  relative z-20",
         className
       )}
     >
@@ -86,7 +86,7 @@ export const CardTitle = ({
   return (
     <h4
       className={cn(
-        "text-sm tracking-wide text-center text-neutral-300 hover:text-neutral-50 transition-colors ",
+        "lg:text-sm text-xs tracking-wide text-center text-neutral-300 hover:text-neutral-50 transition-colors ",
         className
       )}
     >

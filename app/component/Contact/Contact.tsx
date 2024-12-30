@@ -44,11 +44,11 @@ const Contact = () => {
             backgroundSize: "400% 400%",
           }}
           className={cn(
-            " p-8 text-[#d1c4e9]   bg-dot-white/[0.2] rounded-3xl flex-col space-y-2"
+            "p-8 text-[#d1c4e9] bg-dot-white/[0.2] rounded-3xl flex-col space-y-2"
           )}
         >
           <h3 className="text-xl text-center">
-            Vous voulez commencez un projet ensemble ?
+            Prêt à démarrer un projet ensemble ?
           </h3>
           <ScriptCopyBtn
             showMultiplePackageOptions={false}
@@ -66,28 +66,54 @@ const Contact = () => {
           />
         </motion.div>
         <div className="space-y-5">
-          <h4 className="text-xl text-center">
-            Vous vous posez des questions ?
-          </h4>
+          <h4 className="text-xl text-center">Vous avez des questions ?</h4>
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
-              <AccordionTrigger>Is it accessible?</AccordionTrigger>
+              <AccordionTrigger>
+                Quels services proposez-vous ?
+              </AccordionTrigger>
               <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
+                Je propose le développement et l’optimisation de sites web et
+                applications web, la création d'interfaces modernes et adaptées,
+                ainsi que des conseils pour améliorer votre présence en ligne.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
-              <AccordionTrigger>Is it styled?</AccordionTrigger>
+              <AccordionTrigger>
+                Quels sont vos délais habituels ?
+              </AccordionTrigger>
               <AccordionContent>
-                Yes. It comes with default styles that matches the other
-                components&apos; aesthetic.
+                Cela dépend du projet, mais je m’efforce de livrer rapidement
+                tout en maintenant une qualité optimale. Parlons-en pour définir
+                vos besoins !
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
-              <AccordionTrigger>Is it animated?</AccordionTrigger>
+              <AccordionTrigger>Quels outils utilisez-vous ?</AccordionTrigger>
               <AccordionContent>
-                Yes. It's animated by default, but you can disable it if you
-                prefer.
+                J'utilise des technologies modernes comme Typescript, Next.js,
+                TailwindCSS, et bien d'autres pour garantir des sites
+                performants et évolutifs.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-4">
+              <AccordionTrigger>
+                Est-il possible d’avoir un devis gratuit ?
+              </AccordionTrigger>
+              <AccordionContent>
+                Bien sûr ! Contactez-moi via le formulaire et je vous fournirai
+                une estimation personnalisée.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-5">
+              <AccordionTrigger>
+                Travaillez-vous sur des projets personnels ?
+              </AccordionTrigger>
+              <AccordionContent>
+                Oui, je travaille également sur des projets personnels mais
+                également professionnels pour enrichir mes compétences et
+                expérimenter de nouvelles technologies. Cela contribue à
+                améliorer mes services.
               </AccordionContent>
             </AccordionItem>
           </Accordion>

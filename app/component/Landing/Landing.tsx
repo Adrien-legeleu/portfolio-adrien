@@ -36,7 +36,7 @@ export default function Landing() {
             className="text-[#c9a9e6] text-center"
           />
         </p>
-        <Link href={"#projects"}>
+        <Link href={"#projects"} className="flex justify-center">
           <Button>Voir mes projets</Button>
         </Link>
       </div>

@@ -48,7 +48,7 @@ export default function Project() {
                       {project.description}
                     </span>
                   </div>
-                  <div className="flex justify-between items-center w-full absolute bottom-0">
+                  <div className="flex justify-between items-center w-full absolute bottom-0 px-4 left-0">
                     <ul className="flex gap-2">
                       {project.languages.map((language, idx) => (
                         <li
