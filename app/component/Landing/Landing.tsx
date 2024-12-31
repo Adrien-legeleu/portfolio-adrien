@@ -28,14 +28,14 @@ export default function Landing() {
             <MorphingText texts={texts} />
           </span>
         </h1>
-        <p className="text-white flex items-center justify-center text-lg max-w-xl mx-auto">
+        <div className="text-white flex items-center justify-center text-lg max-w-xl mx-auto">
           <LetterPullup words={"Bienvenue, je suis "} delay={0.05} />
           <LetterPullup
             words={"Adrien Legeleux"}
             delay={0.05}
             className="text-[#c9a9e6] text-center"
           />
-        </p>
+        </div>
         <Link href={"#projects"} className="flex justify-center">
           <Button>Voir mes projets</Button>
         </Link>
