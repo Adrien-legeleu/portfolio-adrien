@@ -13,11 +13,11 @@ export function FormContact() {
     console.log("Formulaire envoyé");
   };
   return (
-    <div className="w-full mx-auto rounded-none md:rounded-3xl border p-4 md:p-8 shadow-input bg-black">
+    <div className="w-full mx-auto rounded-3xl border p-4 md:p-8 shadow-input bg-black max-md:row-span-2">
       <h2 className="font-bold text-xl text-center text-neutral-200">
         Un projet en tête ? Parlons-en !
       </h2>
-      <p className="text-sm max-w-sm mt-2 text-center text-neutral-300">
+      <p className="text-sm max-w-sm mx-auto mt-2 text-center text-neutral-300">
         Vous avez une idée, une question ou besoin d'aide pour développer un
         site web ? Remplissez ce formulaire et je reviendrai vers vous
         rapidement pour en discuter.

@@ -7,12 +7,12 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="pt-20 pb-4 flex items-center justify-center flex-col gap-8">
-      <h2 className="text-3xl max-w-xl text-center font-bold">
-        Prêt à faire passer <span className="text-[#d1c4e9]">votre</span>{" "}
+    <div className="pt-20 pb-[6px] flex items-center justify-center flex-col gap-8">
+      <h2 className="text-3xl max-w-xl text-center max-sm:px-10 font-bold">
+        Prêt à faire passer <span className="text-[#d1c4e9] ">votre</span>{" "}
         présence digitale au niveau supérieur ?
       </h2>
-      <p className="text-sm text-neutral-400 max-w-md text-center">
+      <p className="text-sm text-neutral-400 max-w-md max-sm:px-10 text-center">
         Contactez-moi dès aujourd’hui pour transformer vos idées en projets
         concrets et percutants.
       </p>
@@ -25,7 +25,7 @@ const Footer = () => {
           </span>
         </button>
       </Link>
-      <div className="flex justify-between mt-16 w-full px-8">
+      <div className="flex justify-between items-end mt-16 w-full px-8">
         <span className="text-sm text-neutral-500">
           Copyright ©2025 Adrien Legeleux
         </span>

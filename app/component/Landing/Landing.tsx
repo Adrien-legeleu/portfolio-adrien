@@ -10,7 +10,7 @@ export default function Landing() {
 
   return (
     <div
-      className="h-screen w-full flex justify-center text-center items-center"
+      className="h-screen w-full xs:px-0 px-4 flex justify-center text-center items-center"
       id="home"
     >
       <Spotlight
@@ -22,7 +22,7 @@ export default function Landing() {
           Développeur FullStack
         </WordPullUp>
 
-        <h1 className="text-5xl text-white max-w-3xl">
+        <h1 className="xs:text-5xl text-4xl text-white max-w-3xl ">
           Donnez vie à vos idées avec{" "}
           <span className="text-[#c9a9e6]">
             <MorphingText texts={texts} />

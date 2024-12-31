@@ -18,7 +18,7 @@ interface ScriptCopyBtnProps extends HTMLAttributes<HTMLDivElement> {
 }
 
 export default function ScriptCopyBtn({
-  showMultiplePackageOptions = true,
+  showMultiplePackageOptions,
   codeLanguage,
   lightTheme,
   darkTheme,
@@ -86,7 +86,6 @@ export default function ScriptCopyBtn({
                       }`}
                       onClick={() => setPackageManager(pm)}
                     >
-                      {pm}
                       {packageManager === pm && (
                         <motion.div
                           className="absolute inset-x-0 bottom-[1px] mx-auto h-0.5 w-[90%] bg-primary"
@@ -107,36 +106,34 @@ export default function ScriptCopyBtn({
           )}
         </div>
         <div className="relative flex items-center text-sm">
-          <div className="min-w-[300px] grow font-mono">
+          <div className="lg:w-[300px] w-auto grow font-mono">
             {highlightedCode ? (
               <div
-                className={`[&>pre]:overflow-x-auto [&>pre]:rounded-md [&>pre]:p-2 [&>pre]:px-4 [&>pre]:font-mono ${
+                className={`[&>pre]:overflow-x-auto max-md:text-xs  [&>pre]:rounded-md [&>pre]:p-2 [&>pre]:px-4 [&>pre]:font-mono ${
                   theme === "dark" ? "dark" : "light"
                 }`}
                 dangerouslySetInnerHTML={{ __html: highlightedCode }}
               />
             ) : (
-              <pre className="rounded-md  border border-border bg-white p-2 px-4 font-mono dark:bg-black">
-                {command}
-              </pre>
+              <pre className="rounded-md  border border-border bg-white p-2 px-4 font-mono dark:bg-black"></pre>
             )}
           </div>
           <Button
             variant="outline"
             size="icon"
-            className="relative ml-2 rounded-md"
+            className="relative ml-2 rounded-md "
             onClick={copyToClipboard}
             aria-label={copied ? "Copied" : "Copy to clipboard"}
           >
             <span className="sr-only">{copied ? "Copied" : "Copy"}</span>
             <Copy
-              className={`h-3 w-3 transition-all duration-300 ${
-                copied ? "scale-0" : "scale-100"
+              className={`h-1 w-1 transition-all duration-300 ${
+                copied ? "scale-0" : "scale-95"
               }`}
             />
             <Check
               className={`absolute inset-0 m-auto h-3 w-3 transition-all duration-300 ${
-                copied ? "scale-100" : "scale-0"
+                copied ? "scale-75" : "scale-0"
               }`}
             />
           </Button>

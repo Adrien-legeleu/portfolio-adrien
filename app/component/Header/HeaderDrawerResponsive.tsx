@@ -34,19 +34,19 @@ export function HeaderDrawerResponsive() {
     <Drawer>
       {/* Bouton principal du menu */}
       <DrawerTrigger asChild>
-        <div className="fixed z-50 bottom-5 left-1/2 -translate-x-1/2 w-60 gap-6 bg-neutral-800 rounded-3xl border border-neutral-700/50 flex justify-between items-center px-6 py-3 shadow-lg">
+        <div className="fixed z-50 bottom-8 left-1/2 -translate-x-1/2 w-60 gap-6 bg-neutral-800 rounded-3xl border border-neutral-700/50 flex justify-between items-center px-6 py-3 shadow-lg">
           <Link href="#home">
-            <h2 className="text-xl font-bold text-neutral-200 flex gap-4 items-center">
+            <h2 className="sm:text-xl text-lg font-bold text-neutral-200 flex gap-3 items-center">
               <div className="relative flex items-center justify-center">
                 <Image
                   src={ImgProfil}
                   width={50}
                   height={50}
                   alt="Photo de profil d'Adrien Legeleux, développeur"
-                  className="rounded-full object-cover"
+                  className="rounded-full  min-w-8 max-w-8 min-h-8 max-h-8 object-cover"
                 />
               </div>
-              Adrien<span className="text-[#d1c4e9]">.</span>
+              Adrien.
             </h2>
           </Link>
           <IconMenuDeep
@@ -74,7 +74,9 @@ export function HeaderDrawerResponsive() {
                 key={idx}
                 className="text-lg hover:text-[#d1c4e9] transition-all duration-300"
               >
-                <Link href={item.link}>{item.title}</Link>
+                <DrawerClose asChild>
+                  <Link href={item.link}>{item.title}</Link>
+                </DrawerClose>
               </li>
             ))}
           </ul>

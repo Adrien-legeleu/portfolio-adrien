@@ -25,7 +25,10 @@ export default function Project() {
           uniques et les transformer en designs interactifs qui captivent.
         </p>
       </div>
-      <ul className="grid xl:grid-cols-3 z-10 md:grid-cols-2 px-10 max-w-[1500px] mx-auto max-md:overflow-y-scroll max-md:h-screen items-center justify-center w-full gap-24">
+      <ul
+        style={{ scrollbarWidth: "none" }}
+        className="grid xl:grid-cols-3 z-10 md:grid-cols-2 px-10 max-w-[1500px] mx-auto max-md:overflow-y-scroll max-md:h-screen items-center justify-center w-full gap-24"
+      >
         {projectsData.map((project, idx) => {
           return (
             <li className="" key={`project numéro ${idx}`}>

@@ -26,9 +26,12 @@ const Contact = () => {
     },
   };
   return (
-    <div className="my-20 grid grid-cols-2 gap-20 px-5" id="contact">
+    <div
+      className="my-20 grid grid-cols-1 md:grid-cols-2 lg:gap-20 gap-10 px-5 "
+      id="contact"
+    >
       <FormContact />
-      <div className="space-y-10">
+      <div className="space-y-10 md:row-span-1 max-md:row-start-2 max-md:grid max-md:grid-cols-51/49 max-sm:grid-cols-1 max-md:gap-10 max-sm:mb-10 max-sm:gap-0 items-center justify-center">
         <motion.div
           initial="initial"
           animate="animate"
@@ -44,7 +47,7 @@ const Contact = () => {
             backgroundSize: "400% 400%",
           }}
           className={cn(
-            "p-8 text-[#d1c4e9] bg-dot-white/[0.2] rounded-3xl flex-col space-y-2"
+            "lg:p-8 p-4 text-[#d1c4e9] bg-dot-white/[0.2] rounded-3xl flex-col space-y-2 max-sm:row-span-2"
           )}
         >
           <h3 className="text-xl text-center">
@@ -65,7 +68,10 @@ const Contact = () => {
             commandMap={customCommandMap2}
           />
         </motion.div>
-        <div className="space-y-5">
+        <div
+          className="space-y-5 max-md:overflow-y-scroll h-64 max-sm:row-span-1 "
+          style={{ scrollbarWidth: "none" }}
+        >
           <h4 className="text-xl text-center">Vous avez des questions ?</h4>
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
