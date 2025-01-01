@@ -79,8 +79,8 @@ const Contact = () => {
                 Quels services proposez-vous ?
               </AccordionTrigger>
               <AccordionContent>
-                Je propose le développement et l&lsquo;optimisation de sites web
-                et applications web, la création d'interfaces modernes et
+                Je propose le développement et l&apos;optimisation de sites web
+                et applications web, la création d&apos;interfaces modernes et
                 adaptées, ainsi que des conseils pour améliorer votre présence
                 en ligne.
               </AccordionContent>
@@ -90,7 +90,7 @@ const Contact = () => {
                 Quels sont vos délais habituels ?
               </AccordionTrigger>
               <AccordionContent>
-                Cela dépend du projet, mais je m&lsquo;efforce de livrer
+                Cela dépend du projet, mais je m&apos;efforce de livrer
                 rapidement tout en maintenant une qualité optimale. Parlons-en
                 pour définir vos besoins !
               </AccordionContent>
@@ -98,14 +98,14 @@ const Contact = () => {
             <AccordionItem value="item-3">
               <AccordionTrigger>Quels outils utilisez-vous ?</AccordionTrigger>
               <AccordionContent>
-                J'utilise des technologies modernes comme Typescript, Next.js,
-                TailwindCSS, et bien d'autres pour garantir des sites
-                performants et évolutifs.
+                J&apos;utilise des technologies modernes comme Typescript,
+                Next.js, TailwindCSS, et bien d&apos;autres pour garantir des
+                sites performants et évolutifs.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
               <AccordionTrigger>
-                Est-il possible d&lsquo;avoir un devis gratuit ?
+                Est-il possible d&apos;avoir un devis gratuit ?
               </AccordionTrigger>
               <AccordionContent>
                 Bien sûr ! Contactez-moi via le formulaire et je vous fournirai

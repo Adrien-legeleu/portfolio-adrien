@@ -4,7 +4,6 @@ import ShineBorder from "./shine-border";
 import { motion } from "framer-motion";
 
 interface FlipCardProps {
-  image: string;
   title: React.ReactNode;
   description: string;
   duration?: number;
@@ -13,7 +12,6 @@ interface FlipCardProps {
 }
 
 export function FlipCard({
-  image,
   title,
   description,
   duration,
