@@ -325,7 +325,7 @@ const items = [
     title: "Ma stack technologique",
     description: (
       <span className="text-sm">
-        Je m&lsquo;efforce de maîtriser et d&lsquo;améliorer constamment mes
+        Je m&apos;efforce de maîtriser et d&apos;améliorer constamment mes
         outils.
       </span>
     ),
@@ -337,7 +337,7 @@ const items = [
     title: "Dynamisme et flexibilité",
     description: (
       <span className="text-sm">
-        Chaque projet évolue: je m&lsquo;assure d'offrir des solutions vivantes
+        Chaque projet évolue: je m&apos;assure d'offrir des solutions vivantes
         et adaptées aux besoins changeants.
       </span>
     ),
@@ -349,8 +349,8 @@ const items = [
     title: "Analyse des performances",
     description: (
       <span className="text-sm">
-        J&lsquo;évalue et optimise les sites pour offrir une expérience fluide
-        et rapide.
+        J&apos;évalue et optimise les sites pour offrir une expérience fluide et
+        rapide.
       </span>
     ),
     header: <SkeletonFour />,
