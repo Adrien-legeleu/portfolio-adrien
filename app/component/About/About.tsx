@@ -1,7 +1,7 @@
 "use client";
 import { cn } from "@/lib/utils";
 import React from "react";
-import Img from "@/public/images/about (1).jpg";
+import Img from "@/public/images/about1.jpg";
 
 import {
   IconBoxAlignRightFilled,
