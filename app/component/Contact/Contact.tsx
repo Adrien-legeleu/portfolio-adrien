@@ -79,9 +79,10 @@ const Contact = () => {
                 Quels services proposez-vous ?
               </AccordionTrigger>
               <AccordionContent>
-                Je propose le développement et l’optimisation de sites web et
-                applications web, la création d'interfaces modernes et adaptées,
-                ainsi que des conseils pour améliorer votre présence en ligne.
+                Je propose le développement et l&lsquo;optimisation de sites web
+                et applications web, la création d'interfaces modernes et
+                adaptées, ainsi que des conseils pour améliorer votre présence
+                en ligne.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
@@ -89,9 +90,9 @@ const Contact = () => {
                 Quels sont vos délais habituels ?
               </AccordionTrigger>
               <AccordionContent>
-                Cela dépend du projet, mais je m’efforce de livrer rapidement
-                tout en maintenant une qualité optimale. Parlons-en pour définir
-                vos besoins !
+                Cela dépend du projet, mais je m&lsquo;efforce de livrer
+                rapidement tout en maintenant une qualité optimale. Parlons-en
+                pour définir vos besoins !
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
@@ -104,7 +105,7 @@ const Contact = () => {
             </AccordionItem>
             <AccordionItem value="item-4">
               <AccordionTrigger>
-                Est-il possible d’avoir un devis gratuit ?
+                Est-il possible d&lsquo;avoir un devis gratuit ?
               </AccordionTrigger>
               <AccordionContent>
                 Bien sûr ! Contactez-moi via le formulaire et je vous fournirai

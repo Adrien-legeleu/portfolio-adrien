@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { cn } from "@/lib/utils";
-import { IconBrandGithub } from "@tabler/icons-react";
 import { Label } from "./LabelContact";
 import { Input } from "./inputContact";
 import { Textarea } from "./TextareaContact";
@@ -18,8 +17,8 @@ export function FormContact() {
         Un projet en tête ? Parlons-en !
       </h2>
       <p className="text-sm max-w-sm mx-auto mt-2 text-center text-neutral-300">
-        Vous avez une idée, une question ou besoin d'aide pour développer un
-        site web ? Remplissez ce formulaire et je reviendrai vers vous
+        Vous avez une idée, une question ou besoin d&lsquo;aide pour développer
+        un site web ? Remplissez ce formulaire et je reviendrai vers vous
         rapidement pour en discuter.
       </p>
 
@@ -65,15 +64,6 @@ export function FormContact() {
     </div>
   );
 }
-
-const BottomGradient = () => {
-  return (
-    <>
-      <span className="group-hover/btn:opacity-100 block transition duration-500 opacity-0 absolute h-px w-full -bottom-px inset-x-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent" />
-      <span className="group-hover/btn:opacity-100 blur-sm block transition duration-500 opacity-0 absolute h-px w-1/2 mx-auto -bottom-px inset-x-10 bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
-    </>
-  );
-};
 
 const LabelInputContainer = ({
   children,

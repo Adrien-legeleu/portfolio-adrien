@@ -137,7 +137,7 @@ const SvgFilters: React.FC = () => (
   </svg>
 );
 
-const MorphingText: React.FC<MorphingTextProps> = ({ texts, className }) => (
+const MorphingText: React.FC<MorphingTextProps> = ({ texts }) => (
   <div
     className={cn(
       "relative mx-auto h-12 w-full max-w-screen-md text-center  [filter:url(#threshold)_blur(0.2px)] "
