@@ -181,7 +181,6 @@ export const Card = ({ card, index }: { card: Card; index: number }) => {
     <>
       <FlipCard
         description={card.category}
-        image=""
         duration={24}
         rotate="y"
         subtitle={card.title}
