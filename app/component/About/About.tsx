@@ -337,8 +337,8 @@ const items = [
     title: "Dynamisme et flexibilité",
     description: (
       <span className="text-sm">
-        Chaque projet évolue: je m&apos;assure d'offrir des solutions vivantes
-        et adaptées aux besoins changeants.
+        Chaque projet évolue: je m&apos;assure d&apos;offrir des solutions
+        vivantes et adaptées aux besoins changeants.
       </span>
     ),
     header: <SkeletonThree />,
