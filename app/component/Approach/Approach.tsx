@@ -27,7 +27,6 @@ const Approach = () => {
         <div className="flex gap-4 mt-28 justify-around ">
           <FlipCard
             description="Nous travaillons ensemble pour définir les objectifs de votre site, votre audience cible et les fonctionnalités clés. Nous discuterons de la structure, de la navigation et des besoins en contenu."
-            image=""
             duration={24}
             rotate="y"
             subtitle="Planification & Stratégie"
@@ -42,7 +41,6 @@ const Approach = () => {
           />
           <FlipCard
             description="Une fois le plan validé, je commence à coder tout en vous tenant informé à chaque étape, du croquis initial au code finalisé."
-            image=""
             rotate="y"
             duration={20}
             subtitle="Développement & Suivi"
@@ -57,7 +55,6 @@ const Approach = () => {
           />
           <FlipCard
             description="C’est ici que la magie opère. À partir du design validé, je transforme chaque élément en code fonctionnel et je construis votre site de A à Z."
-            image=""
             rotate="y"
             duration={16}
             subtitle="Finalisation & Lancement"
