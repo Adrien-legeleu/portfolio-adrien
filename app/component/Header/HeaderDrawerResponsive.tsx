@@ -81,9 +81,13 @@ export function HeaderDrawerResponsive() {
             ))}
           </ul>
           <DrawerFooter className="mt-8 flex justify-between gap-4">
-            <Link href="#contact">
-              <Button className="w-full">Me contacter</Button>
-            </Link>
+            <DrawerClose asChild>
+              {" "}
+              <Link href="#contact">
+                <Button className="w-full">Me contacter</Button>
+              </Link>
+            </DrawerClose>
+
             <DrawerClose asChild>
               <Button variant="outline">Fermer</Button>
             </DrawerClose>
