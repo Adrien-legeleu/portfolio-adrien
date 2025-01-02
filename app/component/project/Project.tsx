@@ -40,7 +40,7 @@ export default function Project() {
                       width={200}
                       height={200}
                       className="w-full h-full rounded-lg object-contain"
-                      alt={`image de ${project.title}`}
+                      alt={`image du projet : ${project.title}`}
                     />
                   </div>
                   <h3 className="max-w-xs !pb-2 !m-0 font-bold text-base text-slate-100">
