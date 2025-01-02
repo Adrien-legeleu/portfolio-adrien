@@ -4,7 +4,7 @@ import { PinContainer } from "@/components/ui/3d-pin";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
-export default function Project() {
+export function Project() {
   return (
     <div
       className="space-y-12 relative py-20 w-full my-28 dark:bg-dot-white/[0.2] bg-dot-black/[0.2]"
@@ -19,10 +19,11 @@ export default function Project() {
           </span>
         </h2>
         <p className="text-center text-lg px-8 max-w-4xl leading-relaxed text-neutral-400">
-          Découvrez une sélection de projets que j’ai réalisés avec passion.
-          Chacun de ces sites reflète mon engagement à créer des expériences web
-          modernes, créatives et fonctionnelles. J’aime explorer des idées
-          uniques et les transformer en designs interactifs qui captivent.
+          Découvrez une sélection de projets que j&apos;ai réalisés avec
+          passion. Chacun de ces sites reflète mon engagement à créer des
+          expériences web modernes, créatives et fonctionnelles. J&apos;aime
+          explorer des idées uniques et les transformer en designs interactifs
+          qui captivent.
         </p>
       </div>
       <ul
