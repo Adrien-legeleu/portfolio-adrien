@@ -26,7 +26,7 @@ const Footer = () => {
         </button>
       </Link>
       <div className="flex justify-between items-end mt-16 w-full px-8">
-        <span className="text-sm text-neutral-500">
+        <span className="text-sm text-neutral-300">
           Copyright ©2025 Adrien Legeleux
         </span>
         <ul className="flex gap-6">
@@ -35,6 +35,7 @@ const Footer = () => {
               href="https://github.com/Adrien-legeleu"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Aller sur mon compte Github"
             >
               <IconBrandGithub stroke={2} />
             </a>
@@ -44,6 +45,7 @@ const Footer = () => {
               href="https://www.linkedin.com/in/adrien-legeleux/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Aller sur mon compte Linkedin"
             >
               <IconBrandLinkedin stroke={2} />
             </a>

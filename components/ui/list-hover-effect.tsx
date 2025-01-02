@@ -24,7 +24,7 @@ export const HoverEffect = ({
           key={item?.link}
           className={`relative group  block  h-full ${
             item.title === "Contactez-moi"
-              ? "bg-red-600 rounded-3xl font-semibold"
+              ? "bg-red-800 rounded-3xl font-semibold"
               : ""
           }`}
           onMouseEnter={() => setHoveredIndex(idx)}
@@ -84,13 +84,13 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4
+    <h3
       className={cn(
-        "lg:text-sm text-xs tracking-wide text-center text-neutral-300 hover:text-neutral-50 transition-colors ",
+        "lg:text-sm text-xs tracking-wide text-center text-neutral-200 hover:text-neutral-50 transition-colors ",
         className
       )}
     >
       {children}
-    </h4>
+    </h3>
   );
 };

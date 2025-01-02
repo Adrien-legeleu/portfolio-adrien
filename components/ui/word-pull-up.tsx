@@ -17,7 +17,7 @@ interface WordPullUpProps extends MotionProps {
 export default function WordPullUp({
   children,
   className,
-  as: Component = "h6",
+  as: Component = "h2",
   variants = {
     hidden: { opacity: 0 },
     show: {
