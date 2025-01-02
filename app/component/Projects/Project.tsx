@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 export function Project() {
   return (
     <div
-      className="space-y-12 relative py-20 w-full my-28 dark:bg-dot-white/[0.2] bg-dot-black/[0.2]"
+      className="space-y-12 relative py-20 w-full max-w-[1500px]  mx-auto  my-28 dark:bg-dot-white/[0.2] bg-dot-black/[0.2]"
       id="projects"
     >
       <div className="absolute pointer-events-none -z-0 inset-0 flex items-center justify-center [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)]" />
@@ -28,7 +28,7 @@ export function Project() {
       </div>
       <ul
         style={{ scrollbarWidth: "none" }}
-        className="grid xl:grid-cols-3 z-10 md:grid-cols-2 px-10 max-w-[1500px] mx-auto max-md:overflow-y-scroll max-md:h-screen items-center justify-center w-full gap-24"
+        className="grid xl:grid-cols-3 z-10 md:grid-cols-2 px-10 mx-auto max-md:overflow-y-scroll max-md:h-screen items-center justify-center w-full gap-24"
       >
         {projectsData.map((project, idx) => {
           return (

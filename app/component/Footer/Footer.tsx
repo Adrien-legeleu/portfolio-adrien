@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="pt-20 pb-[6px] flex items-center justify-center flex-col gap-8">
+    <div className="pt-20 pb-[6px] flex items-center  max-w-[1500px] mx-auto justify-center flex-col gap-8">
       <h2 className="text-3xl max-w-xl text-center max-sm:px-10 font-bold">
         Prêt à faire passer <span className="text-[#d1c4e9] ">votre</span>{" "}
         présence digitale au niveau supérieur ?

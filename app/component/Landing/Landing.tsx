@@ -22,7 +22,7 @@ export default function Landing() {
           Développeur FullStack
         </WordPullUp>
 
-        <h1 className="xs:text-5xl text-4xl text-white max-w-3xl ">
+        <h1 className="xs:text-5xl md:text-5xl 2xl:text-6xl text-4xl text-white max-w-3xl ">
           Donnez vie à vos idées avec{" "}
           <span className="text-[#c9a9e6]">
             <MorphingText texts={texts} />

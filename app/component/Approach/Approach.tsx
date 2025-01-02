@@ -24,7 +24,7 @@ const Approach = () => {
       {isMobile ? (
         <ApproachSlideResponsive />
       ) : (
-        <div className="flex gap-4 mt-28 justify-around ">
+        <div className="flex gap-4 mt-28 justify-around  max-w-[1500px] mx-auto">
           <FlipCard
             description="Nous travaillons ensemble pour définir les objectifs de votre site, votre audience cible et les fonctionnalités clés. Nous discuterons de la structure, de la navigation et des besoins en contenu."
             duration={24}
