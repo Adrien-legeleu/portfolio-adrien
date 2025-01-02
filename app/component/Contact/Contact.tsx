@@ -27,7 +27,7 @@ const Contact = () => {
   };
   return (
     <div
-      className="my-20 grid grid-cols-1 md:grid-cols-2 lg:gap-20 gap-10 px-5 "
+      className="my-20 grid grid-cols-1 md:grid-cols-2 lg:gap-20 gap-10 sm:px-5 "
       id="contact"
     >
       <FormContact />
