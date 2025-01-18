@@ -26,8 +26,8 @@ export function About() {
           Actuellement, je travaille avec Ikovaline, une start-up innovante dans
           le domaine du marketing digital. Nous aidons les entreprises à
           développer leur visibilité en ligne et à atteindre leurs objectifs
-          grâce à des stratégies sur mesure, telles que l'optimisation SEO, la
-          gestion de Google My Business, et bien plus encore. Découvrez notre
+          grâce à des stratégies sur mesure, telles que l&apos;optimisation SEO,
+          la gestion de Google My Business, et bien plus encore. Découvrez notre
           mission et nos réalisations sur{" "}
           <a href="https://ikovaline.com" className="text-indigo-500 underline">
             {" "}
