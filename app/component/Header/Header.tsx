@@ -2,7 +2,7 @@
 import { HoverEffect } from "@/components/ui/list-hover-effect";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import ImgProfil from "@/public/images/about1.jpg";
+import ImgProfil from "@/public/images/team-adrien.jpg";
 import Link from "next/link";
 import { HeaderDrawerResponsive } from "./HeaderDrawerResponsive";
 

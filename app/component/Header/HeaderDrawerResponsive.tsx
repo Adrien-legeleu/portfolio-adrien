@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/drawer";
 import Image from "next/image";
 import Link from "next/link";
-import ImgProfil from "@/public/images/about1.jpg";
+import ImgProfil from "@/public/images/team-adrien.jpg";
 import { IconMenuDeep } from "@tabler/icons-react";
 
 export function HeaderDrawerResponsive() {

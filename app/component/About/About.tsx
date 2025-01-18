@@ -1,7 +1,9 @@
 "use client";
 import { cn } from "@/lib/utils";
 import React from "react";
-import Img from "@/public/images/about1.jpg";
+import Img1 from "@/public/images/analyse-de-performance.png";
+import Img2 from "@/public/images/itineraire.png";
+import Img3 from "@/public/images/ux.png";
 
 import {
   IconBoxAlignRightFilled,
@@ -11,23 +13,42 @@ import {
   IconTableColumn,
 } from "@tabler/icons-react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 export function About() {
   return (
-    <BentoGrid className="max-w-5xl mx-auto   md:auto-rows-[20rem]">
-      {items.map((item, i) => (
-        <BentoGridItem
-          key={i}
-          title={item.title}
-          description={item.description}
-          header={item.header}
-          className={cn("[&>p:text-lg]", item.className)}
-          icon={item.icon}
-        />
-      ))}
-    </BentoGrid>
+    <div className="space-y-20">
+      <div className="flex items-center justify-center max-w-3xl mx-auto flex-col gap-10 text-center">
+        <h2 className="text-3xl  font-bold">À propos</h2>
+        <p className="text-neutral-200 text-lg leading-relaxed tracking-wider">
+          Actuellement, je travaille avec Ikovaline, une start-up innovante dans
+          le domaine du marketing digital. Nous aidons les entreprises à
+          développer leur visibilité en ligne et à atteindre leurs objectifs
+          grâce à des stratégies sur mesure, telles que l'optimisation SEO, la
+          gestion de Google My Business, et bien plus encore. Découvrez notre
+          mission et nos réalisations sur{" "}
+          <a href="https://ikovaline.com" className="text-indigo-500 underline">
+            {" "}
+            <Button> Ikovaline</Button>
+          </a>
+          .
+        </p>
+      </div>
+      <BentoGrid className="max-w-5xl mx-auto   md:auto-rows-[20rem]">
+        {items.map((item, i) => (
+          <BentoGridItem
+            key={i}
+            title={item.title}
+            description={item.description}
+            header={item.header}
+            className={cn("[&>p:text-lg]", item.className)}
+            icon={item.icon}
+          />
+        ))}
+      </BentoGrid>
+    </div>
   );
 }
 
@@ -209,11 +230,11 @@ const SkeletonFour = () => {
           className="h-full w-1/3 rounded-2xl p-4 bg-black border-white/[0.1] border flex flex-col items-center justify-center"
         >
           <Image
-            src={Img}
+            src={card.src}
             alt={card.alt}
             height="100"
             width="100"
-            className="rounded-full h-10 w-10"
+            className=" h-10 w-10"
           />
           <p className="sm:text-sm text-xs text-center font-semibold text-neutral-400 mt-4">
             {card.text}
@@ -235,18 +256,21 @@ const cards = [
     text: "Analyse approfondie des performances.",
     label: "Rapidité",
     labelStyle: "border-green-500 bg-green-900/20 text-green-600",
+    src: Img1,
   },
   {
     alt: "optimisation",
     text: "Optimisation pour une fluidité maximale.",
     label: "Efficacité",
     labelStyle: "border-blue-500 bg-blue-900/20 text-blue-600",
+    src: Img2,
   },
   {
     alt: "expérience utilisateur",
     text: "Amélioration de l'expérience utilisateur.",
     label: "Confort",
     labelStyle: "border-purple-500 bg-purple-900/20 text-purple-600",
+    src: Img3,
   },
 ];
 
@@ -286,13 +310,7 @@ const SkeletonFive = () => {
         variants={variants}
         className="flex flex-row rounded-2xl border border-white/[0.2] p-2 items-start space-x-2 bg-black"
       >
-        <Image
-          src={Img}
-          alt="avatar"
-          height="100"
-          width="100"
-          className="rounded-full h-10 w-10"
-        />
+        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
         <p className="text-xs text-neutral-400">
           Automatisez les tâches répétitives et gagnez du temps grâce à des
           solutions efficaces et modernes.
