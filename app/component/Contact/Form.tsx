@@ -1,14 +1,63 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Label } from "./LabelContact";
 import { Input } from "./inputContact";
 import { Textarea } from "./TextareaContact";
 import { IconSend } from "@tabler/icons-react";
+import { useToast } from "@/hooks/use-toast";
+import { ToastAction } from "@/components/ui/toast";
 
 export function FormContact() {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const { toast } = useToast();
+  const [data, setData] = useState({
+    tel: "",
+    firstname: "",
+    lastname: "",
+    email: "",
+    message: "",
+  });
+  const handleData = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setData({ ...data, [e.target.id]: e.target.value });
+  };
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    console.log(data);
+    try {
+      const response = await fetch("/api/send", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      if (response.ok) {
+        console.log("message envoyé");
+        toast({
+          title: "Votre message a été envoyé avec succès !",
+          description:
+            "Nous traiterons votre message dans les plus brefs délais.",
+        });
+        setData({
+          tel: "",
+          firstname: "",
+          lastname: "",
+          email: "",
+          message: "",
+        });
+      } else {
+        console.log(response);
+        toast({
+          variant: "destructive",
+          title: "une erreur est survenue",
+          description:
+            "Une erreur est survenue durant l'envoie de votre message",
+          action: <ToastAction altText="Try again">Réessayer</ToastAction>,
+        });
+      }
+    } catch (error) {
+      console.error("error:" + error);
+    }
     console.log("Formulaire envoyé");
   };
   return (
@@ -26,11 +75,21 @@ export function FormContact() {
         <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
           <LabelInputContainer>
             <Label htmlFor="firstname">Prénom</Label>
-            <Input id="firstname" placeholder="Jean" type="text" />
+            <Input
+              id="firstname"
+              placeholder="Jean"
+              type="text"
+              onChange={handleData}
+            />
           </LabelInputContainer>
           <LabelInputContainer>
             <Label htmlFor="lastname">Nom</Label>
-            <Input id="lastname" placeholder="Dupont" type="text" />
+            <Input
+              id="lastname"
+              placeholder="Dupont"
+              type="text"
+              onChange={handleData}
+            />
           </LabelInputContainer>
         </div>
         <LabelInputContainer className="mb-4">
@@ -39,17 +98,24 @@ export function FormContact() {
             id="email"
             placeholder="jean.dupont@example.com"
             type="email"
+            onChange={handleData}
           />
         </LabelInputContainer>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="tel">Téléphone</Label>
-          <Input id="tel" placeholder="07 68 73 52 38" type="tel" />
+          <Input
+            id="tel"
+            placeholder="07 68 73 52 38"
+            type="tel"
+            onChange={handleData}
+          />
         </LabelInputContainer>
         <LabelInputContainer className="mb-4">
           <Textarea
             placeholder="Tapez votre message ici..."
             name="message"
             id="message"
+            onChange={handleData}
           />
         </LabelInputContainer>
 

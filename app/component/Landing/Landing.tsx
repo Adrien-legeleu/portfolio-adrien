@@ -10,7 +10,7 @@ export default function Landing() {
 
   return (
     <div
-      className="h-screen w-full xs:px-0 px-4 flex justify-center text-center items-center"
+      className="h-screen w-full xs:px-0 px-4 flex flex-col md:justify-center justify-start max-md:pt-32 text-center items-center"
       id="home"
     >
       <Spotlight
