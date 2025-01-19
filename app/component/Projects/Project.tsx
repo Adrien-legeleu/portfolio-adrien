@@ -15,15 +15,15 @@ export function Project() {
         <h2 className="sm:text-4xl text-2xl space-x-2 px-4 font-bold space-y-1 text-indigo-purple dark:text-indigo-light text-center">
           <span className="inline-block">Nos</span>
           <span className="bg-[#3F2A78] dark:bg-[#A0AEC0] dark:text-black p-3 sm:text-4xl text-xl inline-block rounded-lg rotate-3 text-neutral-50">
-            Projets ireir oioieor ieor eoiroeri oe rioer ioe
+            Projets
           </span>
         </h2>
         <p className="text-center text-lg px-8 max-w-4xl leading-relaxed text-neutral-400">
           Découvrez une sélection de projets que j&apos;ai réalisés avec
           passion. Chacun de ces sites reflète mon engagement à créer des
           expériences web modernes, créatives et fonctionnelles. J&apos;aime
-          dsds sdsdsds explorer des idées uniques et les transformer en designs
-          interactifs qui captivent.
+          explorer des idées uniques et les transformer en designs interactifs
+          qui captivent.
         </p>
       </div>
       <ul
@@ -49,7 +49,7 @@ export function Project() {
                   </h3>
                   <div className="text-base !m-0 !p-0 font-normal">
                     <span className="text-slate-400 text-xs">
-                      {project.description}sdsd dsd
+                      {project.description}
                     </span>
                   </div>
                   <div className="flex justify-between items-center w-full absolute bottom-0 px-4 left-0">
