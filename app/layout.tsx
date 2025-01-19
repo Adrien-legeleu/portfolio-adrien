@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Adrien Legeleux", url: "https://adrien-legeleux.dev" }],
   openGraph: {
-    title: "Adrien Legeleux | Développeur Fullstack",
+    title: "Adrien Legeleux - Développeur Fullstack",
     description:
       "Découvrez le portfolio d'Adrien Legeleux, un développeur fullstack passionné par la création de solutions digitales innovantes et performantes.",
     url: "https://adrien-legeleux.dev",

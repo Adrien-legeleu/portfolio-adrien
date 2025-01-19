@@ -1,4 +1,3 @@
-import project1 from "@/public/images/projects/app-banque.netlify.app_(Nest Hub Max).png";
 import project2 from "@/public/images/projects/le-resto.netlify.app_(Nest Hub Max).png";
 import project3 from "@/public/images/projects/lurex.netlify.app_(Nest Hub Max) (1).png";
 import project4 from "@/public/images/projects/orlumiere.netlify.app_(Nest Hub) (1).png";
@@ -6,6 +5,7 @@ import project5 from "@/public/images/projects/sturmayr.netlify.app_(Nest Hub Ma
 import project6 from "@/public/images/projects/sushifood.netlify.app_(Nest Hub Max).png";
 import project7 from "@/public/images/projects/villa-tyklouyou.netlify.app_(Nest Hub Max).png";
 import project8 from "@/public/images/projects/lucassportfolio.netlify.app_(Nest Hub Max).png";
+import project9 from "@/public/images/projects/www.ikovaline.com_(Nest Hub).png";
 
 import {
   IconBrandTypescript,
@@ -18,18 +18,46 @@ import {
 
 export const projectsData = [
   {
-    img: project1,
-    title: "Naseem - Banque App",
-    link: "https://app-banque.netlify.app/",
+    img: project9,
+    title: "Ikovaline - Start-up",
+    link: "https://www.ikovaline.com/",
     languages: [
-      <IconBrandReact />,
+      <IconBrandNextjs />,
       <IconBrandTailwind />,
       <IconBrandTypescript />,
     ],
     video: "/video/video-bank.mp4",
     color: "#090C18",
     description:
-      "Une application bancaire moderne avec une interface fluide pour gérer vos finances au quotidien.",
+      "Ikovaline, la start-up marketing digital, optimise votre visibilité en ligne et booste votre croissance grâce à des stratégies sur mesure.",
+  },
+  // {
+  //   img: project1,
+  //   title: "Naseem - Banque App",
+  //   link: "https://app-banque.netlify.app/",
+  //   languages: [
+  //     <IconBrandReact />,
+  //     <IconBrandTailwind />,
+  //     <IconBrandTypescript />,
+  //   ],
+  //   video: "/video/video-bank.mp4",
+  //   color: "#090C18",
+  //   description:
+  //     "Une application bancaire moderne avec une interface fluide pour gérer vos finances au quotidien.",
+  // },
+  {
+    img: project7,
+    title: "Villa Tyklouyou",
+    link: "https://villa-tyklouyou.netlify.app/",
+    languages: [
+      <IconBrandReact />,
+      <IconBrandTailwind />,
+      <IconBrandJavascript />,
+    ],
+    video: "/video/video-villa.mp4",
+    color: "#333333",
+    description:
+      "Un site immersif pour une villa de location, avec des photos captivantes et des informations détaillées sur les services.",
   },
   {
     img: project2,
@@ -41,20 +69,7 @@ export const projectsData = [
     description:
       "Site élégant pour un restaurant, avec un menu interactif et la possibilité de réserver facilement en ligne.",
   },
-  {
-    img: project4,
-    title: "Or Lumière",
-    link: "https://orlumiere.netlify.app/",
-    languages: [
-      <IconBrandNextjs />,
-      <IconBrandTailwind />,
-      <IconBrandTypescript />,
-    ],
-    video: "/video/video-orlumiere.mp4",
-    color: "#FFFFFF",
-    description:
-      "Vitrine numérique d'une marque de bijoux, mettant en avant des créations élégantes et intemporelles.",
-  },
+
   {
     img: project5,
     title: "Sturmayr",
@@ -97,20 +112,7 @@ export const projectsData = [
     description:
       "Site web élégant pour une entreprise de location de voitures de luxe, alliant style et fonctionnalité.",
   },
-  {
-    img: project7,
-    title: "Villa Tyklouyou",
-    link: "https://villa-tyklouyou.netlify.app/",
-    languages: [
-      <IconBrandReact />,
-      <IconBrandTailwind />,
-      <IconBrandJavascript />,
-    ],
-    video: "/video/video-villa.mp4",
-    color: "#333333",
-    description:
-      "Un site immersif pour une villa de location, avec des photos captivantes et des informations détaillées sur les services.",
-  },
+
   {
     img: project8,
     title: "Lucas Portfolio",
@@ -124,5 +126,19 @@ export const projectsData = [
     color: "#444444",
     description:
       "Un portfolio simple et moderne pour un développeur web, mettant en avant ses compétences et ses projets.",
+  },
+  {
+    img: project4,
+    title: "Or Lumière",
+    link: "https://orlumiere.netlify.app/",
+    languages: [
+      <IconBrandNextjs />,
+      <IconBrandTailwind />,
+      <IconBrandTypescript />,
+    ],
+    video: "/video/video-orlumiere.mp4",
+    color: "#FFFFFF",
+    description:
+      "Vitrine numérique d'une marque de bijoux, mettant en avant des créations élégantes et intemporelles.",
   },
 ];
